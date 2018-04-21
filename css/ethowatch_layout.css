@@ -1,0 +1,198 @@
+html, body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  padding-top: 2em;
+}
+
+html {
+  background: linear-gradient(#666, #333);
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+}
+
+/* Add a black background color to the top navigation */
+nav {
+  background: linear-gradient(#444, #111);
+  overflow: hidden;
+}
+
+nav img {
+  vertical-align: middle;
+  padding-right: .7em;
+}
+
+#logo {
+  height: 2em;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+  width: 6em;
+  height: 1.7em;
+  line-height: 1.7em;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+  font-size: 17px;
+  border-right: 1px solid #222;
+}
+
+nav a:first-child {
+  width: 2em;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+  transition: .2s;
+  background: linear-gradient(#999, #444);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th {
+  font-size: 1.5em;
+}
+
+#plus {
+  background: url("../img/plus.png") no-repeat center;
+}
+
+#plus:hover {
+  background: url("../img/plus_green.png")  no-repeat center;
+}
+
+tr {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+table {
+  text-align: center;
+  border-radius: 2px;
+  line-height: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #333;
+  width: 50em;
+  margin: 3em auto 2em;
+  border-radius: .25rem;
+  table-layout: fixed;
+}
+
+tr {
+  text-align: center;
+}
+
+tr:first-child {
+  background: linear-gradient(#444, #111);
+  color: #fff;
+  border: none;
+}
+
+tr:first-child img {
+  position: relative;
+  top: .3em;
+}
+
+th:first-child, td:first-child {
+  width: 3em;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 7em;
+}
+
+th:last-child, td:last-child {
+  width: 50px;
+}
+
+tr {
+  background: lightgray;
+}
+
+tr:not(:first-child):hover {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+tr:last-child td {
+  border: none;
+}
+
+td:nth-child(2) {
+  background: #e2e2e2;
+}
+
+
+td img {
+  visibility: hidden;
+  position: relative;
+  top: .5em;
+}
+
+td img:hover {
+  src: url("../img/trash_open.png");
+}
+
+td {
+  border-bottom: 1px solid #eee;
+}
+
+input {
+  text-align: center;
+  height: 3em;
+  min-width: 100%;
+  border: none;
+  background: none;
+}
+
+#key {
+  width: 2em;
+}
+
+#name {
+  width: 8em;
+}
+
+#desc {
+  width: 35em;
+}
+
+#finishethogrambutton {
+  width: 12em;
+  height: 3.5em;
+  background: linear-gradient(#444, #111);
+  color: white;
+  border: 1px solid #777;
+  border-radius: .25rem;
+  letter-spacing: .05em;
+}
+
+#finishethogrambutton:hover {
+  letter-spacing: .08em;
+  transition: .1s;
+  border: 2px solid lightgray;
+}
+
+#donebuttoncontainer {
+  display: inline-block;
+  width: 50em;
+  text-align: right;
+}

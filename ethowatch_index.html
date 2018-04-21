@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="js/ethowatch_main.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/ethogram.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ethowatch_layout.css">
+    <title>EthoWatch</title>
+  </head>
+  <body>
+    <nav id='navbar'>
+      <a><img id="logo" src="img/ethowatch.png"></a>
+      <a onclick="" href="html/ethowatch_ethogram.html"><img src="img/list_i.png">Design</a>
+      <a onclick="" href="#watch"><img src="img/watch_i.png">Watch</a>
+      <a onclick="" href="#results"><img src="img/data_i.png">Results</a>
+      <a onclick="" href="#help"><img src="img/question_i.png">Help</a>
+    </nav>
+
+    <div id="main">
+      <div >
+        <a href="" id="a">download</a>
+        <button onclick="downloadOnPage('file,text\noh,kay', 'myfilename.csv', 'text/csv')">Create file</button>
+        <br>
+        <input type="file" onchange="readFile(this)">
+        <pre id="out"></pre>
+      </div>
+
+      <h1 id='timestamp'><time>00:00:00</time></h1>
+      <button id="start">start</button>
+      <button id="stop">stop</button>
+      <button id="clear">clear</button>
+    </div>
+
+  </body>
+</html>
